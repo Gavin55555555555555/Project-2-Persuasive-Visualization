@@ -162,11 +162,34 @@
           <figcaption>BRIEF CAPTION HERE.</figcaption>
         </figure>
 
+        <p>
+          I used a Sankey Diagram inspired by the Minard graph to visualize 
+          the journey of a civilian police complaint from when its filed to its outcome. 
+        </p>
+
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
+          <li>
+            I used the <b>width of the flow lines</b> to indicate the quantity of 
+            complaints that went to each outcome. Thicker lines indicate that
+            more complaints went to that outcome. By showing how many complaints
+            are disregarded with a really thick line and how few complaints 
+            result in charges with a really thin line, I hope to convey how a 
+            majority of complaints are disregarded or result in minimal punishment. 
+            I dishonestly put extra emphasis on this by making all the flows to 
+            punitive outcomes even thinner than they should be and the other flows thicker.
+
+          </li>
+          <li>
+            Area is not the most effective visualize channel, so I used 
+            <b>color of the flow lines</b> as a redundant encoding for the 
+            quantity of complaints that went to each outcome. Deeper blues 
+            indicate higher quantities. The deep blues make the thick flow lines
+            look bolder, while the light blues make the thin flow lines look 
+            even thinner. I performed the same dishonest techniques with this
+            encoding as I did with the flow line width.
+          </li>
           <li>RATIONALE_3</li>
         </ul>
       </section>
@@ -176,13 +199,12 @@
 
         <figure>
           <img src="../Not_futile_to_file.png" height = 675 width = 900 alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>Only 11% of police complaints result in the officer facing serious corrective punishment.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
-
         <ul>
-          <li>RATIONALE_1</li>
+          <li>Line Thickness/Area: A visual channel </li>
           <li>RATIONALE_2</li>
           <li>RATIONALE_3</li>
         </ul>

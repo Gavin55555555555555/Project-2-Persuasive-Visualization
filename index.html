@@ -159,13 +159,9 @@
 
         <figure>
           <img src="../Futile_to_file.png" height = 500px width = 1000px alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <figcaption>I used a Sankey Diagram inspired by the Minard graph to visualize 
+            the journey of a civilian police complaint from when its filed to its outcome.</figcaption>
         </figure>
-
-        <p>
-          I used a Sankey Diagram inspired by the Minard graph to visualize 
-          the journey of a civilian police complaint from when its filed to its outcome. 
-        </p>
 
         <p>Design Decisions and Rationale:</p>
 
@@ -190,7 +186,27 @@
             even thinner. I performed the same dishonest techniques with this
             encoding as I did with the flow line width.
           </li>
-          <li>RATIONALE_3</li>
+          <li>I used <b>node placement on the x-axis</b> to indicate how severe 
+            the complaint's resulting punishment is. The further right the node
+            is, the more severe the punishment is. More severe punishments require 
+            more work and processes to achieve, which is represented through distance
+            across the x-axis.
+          </li>
+          <li>
+            I used <b>color of the nodes</b> as a redundant encoding for outcome
+            severity. Deeper shades of red indicate more severe punishment. To 
+            highlight how being charged is the only actual severe outcome, I
+            made the node for charges a very deep red, while all other nodes 
+            are yellow or orange.
+          </li>
+          <li>
+            Some of the punishment names don't do a good job describing what
+            the punishment is, like "command-level discipline". Most of these
+            punishments are not that severe, for example the most severe 
+            instance of command-level discipline is losing ten vacation days.
+            To show how most punishments are not that severe, I detailed each
+            outcome in the <b>legend</b>.
+          </li>
         </ul>
       </section>
 
